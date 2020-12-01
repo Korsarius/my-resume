@@ -67,4 +67,5 @@
 body {
   font-family: var(--font-main);
   background-color: var(--c-dark);
+  color: var(--c-light);
 }
