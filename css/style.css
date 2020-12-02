@@ -201,6 +201,11 @@ body {
   color: var(--txt-c-light);
   border: none;
   cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.my-works-btn:hover {
+  background-color: #f89654;
 }
 
 .my-photo {
@@ -236,6 +241,12 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--txt-c-accent);
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.about-me-btn:hover {
+  transform: scale(1.1);
 }
 
 .about-me-btn--icon {
