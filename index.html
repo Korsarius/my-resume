@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/socialNetworksIcons.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -267,11 +268,155 @@
               placeholder="Phone"
               pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
             />
-            <input type="submit" class="callback-form-submit" value="Discuss the project  —" />
+            <input
+              type="submit"
+              class="callback-form-submit"
+              value="Discuss the project  —"
+            />
           </form>
         </div>
       </section>
       <!-- CALLBACK FORM END-->
+      <!-- CALCULATOR -->
+      <section class="calculator">
+        <div class="calculator-info">
+          <h2 class="calculator-title">
+            Calculate_ the cost of a future project
+          </h2>
+          <p class="calculator-descr">
+            <span>This is an</span>
+            <span class="calculator-descr-accent">approximate</span>
+            <span>calculation.</span>
+          </p>
+          <img
+            class="calculator-img"
+            src="/img/calculator.svg"
+            alt="calculator"
+          />
+          <p>
+            / The final cost depends on the technical requirements, terms,
+            specifics of your project.
+          </p>
+        </div>
+        <form action="" class="calculator-form">
+          <div class="calculator-form-input">
+            <label
+              for="calculator-form-website-type"
+              class="calculator-form-title"
+              >What should be done:</label
+            >
+            <select
+              name="website-type"
+              id="calculator-form-website-type"
+              class="calculator-form-select"
+            >
+              <option value="landing-page" selected>Landing Page</option>
+              <option value="website">Website</option>
+              <option value="cms">CMS</option>
+              <option value="portal">Portal</option>
+              <option value="e-shop">Online Shop</option>
+            </select>
+          </div>
+          <div class="calculator-form-input">
+            <label
+              for="calculator-form-technologies"
+              class="calculator-form-title"
+              >Choose preferred technologies
+            </label>
+            <select
+              name="technologies"
+              id="calculator-form-technologies"
+              class="calculator-form-select"
+            >
+              <option value="html" selected>HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+              <option value="react">React</option>
+              <option value="angular">Angular</option>
+              <option value="php">PHP</option>
+            </select>
+          </div>
+          <div class="calculator-form-input">
+            <label for="" class="calculator-form-title"
+              >Personal account and shopping cart:
+            </label>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="radio-yes-one"
+                class="calculator-form-radio"
+              />
+              <label for="radio-yes-one" class="radio-label">Yes </label>
+              <input
+                type="radio"
+                id="radio-no-one"
+                class="calculator-form-radio"
+              />
+              <label for="radio-no-one" class="radio-label">No </label>
+            </div>
+          </div>
+          <div class="calculator-form-input">
+            <label for="" class="calculator-form-title"
+              >Requests reception on your email:
+            </label>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="radio-yes-two"
+                class="calculator-form-radio"
+              />
+              <label for="radio-yes-two" class="radio-label">Yes </label>
+              <input
+                type="radio"
+                id="radio-no-two"
+                class="calculator-form-radio"
+              />
+              <label for="radio-no-two" class="radio-label">No </label>
+            </div>
+          </div>
+          <div class="calculator-form-input">
+            <p class="calculator-form-total">Cost:</p>
+            <p class="calculator-form-total-cost">350$</p>
+          </div>
+          <input
+            type="submit"
+            class="callback-form-submit"
+            value="Find out the cost  —"
+          />
+        </form>
+      </section>
+      <!-- CALCULATOR END -->
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-container">
+          <span class="my-name">Alex Lomov</span>
+          <span class="my-specialization">Frontend Developer</span>
+          <a class="my-telephone" href="tel:+380684380630"
+            >+38 (068) 438-06-30</a
+          >
+          <a class="my-email" href="mailto:oleksii.lomov@nure.ua"
+            >oleksii.lomov@nure.ua</a
+          >
+          <div class="social-networks-icons">
+            <a href="https://github.com/Korsarius" target="_blank">
+              <i class="icon-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aleksey-lomov-259243137/"
+              target="_blank"
+            >
+              <i class="icon-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/korsarius846/" target="_blank">
+              <i class="icon-facebook2"></i>
+            </a>
+            <a href="https://www.instagram.com/oleksii.lomov/" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
     </div>
     <script src="/js/script.js"></script>
   </body>
