@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/socialNetworksIcons.css" />
+    <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -310,11 +311,11 @@
               id="calculator-form-website-type"
               class="calculator-form-select"
             >
-              <option value="landing-page" selected>Landing Page</option>
-              <option value="website">Website</option>
-              <option value="cms">CMS</option>
-              <option value="portal">Portal</option>
-              <option value="e-shop">Online Shop</option>
+              <option value="landing-page:600" selected>Landing Page</option>
+              <option value="website:1000">Website</option>
+              <option value="cms:2000">CMS</option>
+              <option value="portal:3000">Portal</option>
+              <option value="e-shop:2000">Online Shop</option>
             </select>
           </div>
           <div class="calculator-form-input">
@@ -327,30 +328,36 @@
               name="technologies"
               id="calculator-form-technologies"
               class="calculator-form-select"
+              multiple
             >
-              <option value="html" selected>HTML</option>
-              <option value="css">CSS</option>
-              <option value="js">JavaScript</option>
-              <option value="react">React</option>
-              <option value="angular">Angular</option>
-              <option value="php">PHP</option>
+              <option value="html:500" selected>HTML</option>
+              <option value="css:500" selected>CSS</option>
+              <option value="js:700" selected>JavaScript</option>
+              <option value="react:1000">React</option>
+              <option value="angular:1000">Angular</option>
+              <option value="php:2000">PHP</option>
             </select>
           </div>
           <div class="calculator-form-input">
             <label for="" class="calculator-form-title"
               >Personal account and shopping cart:
             </label>
-            <div class="radio-container">
+            <div class="radio-container" id="radio-container-cart">
               <input
                 type="radio"
                 id="radio-yes-one"
                 class="calculator-form-radio"
+                name="cart"
+                value="yes"
+                checked
               />
               <label for="radio-yes-one" class="radio-label">Yes </label>
               <input
                 type="radio"
                 id="radio-no-one"
                 class="calculator-form-radio"
+                name="cart"
+                value="no"
               />
               <label for="radio-no-one" class="radio-label">No </label>
             </div>
@@ -359,17 +366,22 @@
             <label for="" class="calculator-form-title"
               >Requests reception on your email:
             </label>
-            <div class="radio-container">
+            <div class="radio-container" id="radio-container-reception">
               <input
                 type="radio"
                 id="radio-yes-two"
                 class="calculator-form-radio"
+                name="reception"
+                value="yes"
+                checked
               />
               <label for="radio-yes-two" class="radio-label">Yes </label>
               <input
                 type="radio"
                 id="radio-no-two"
                 class="calculator-form-radio"
+                name="reception"
+                value="no"
               />
               <label for="radio-no-two" class="radio-label">No </label>
             </div>
@@ -418,6 +430,8 @@
       </footer>
       <!-- FOOTER END -->
     </div>
+    <script src="/js/choices.min.js"></script>
+    <script src="/js/calculator.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>
