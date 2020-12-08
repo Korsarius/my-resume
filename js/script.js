@@ -59,6 +59,7 @@ closeVideoBtn.onclick = function () {
 
 //Клик по кнопке Discuss the project, для обратной связи со мной
 callbackToMeBtn.onclick = function (event) {
+  event.preventDefault();
   modalRequestReceived.classList.toggle("modal-request-received--active");
 };
 
