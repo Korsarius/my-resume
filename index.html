@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <style>
+      .modal {
+        display: none;
+      }
+    </style>
+
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/socialNetworksIcons.css" />
+    <link rel="stylesheet" href="css/cross-icon.css" />
     <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <!-- FRONT PAGE -->
-      <section class="front-page">
+      <section class="front-page" id="front-page">
         <nav class="navigation">
-          <a href="" class="logo-link"
+          <a href="#front-page" class="logo-link"
             ><img src="img/goit-logo.svg" alt="logo"
           /></a>
-          <a href="" class="hire-me-btn">— HIRE ME</a>
+          <a href="#callback" class="hire-me-btn">— HIRE ME</a>
           <div class="menu">
             <span class="menu-global menu-top"></span>
             <span class="menu-global menu-middle"></span>
@@ -97,7 +104,7 @@
       </section>
       <!-- FRONT PAGE END -->
       <!-- ABOUT PAGE -->
-      <section class="about-page">
+      <section class="about-page" id="about">
         <h2 class="section-title page-title">I code things from scratch_</h2>
         <p class="about-me--title">
           <span>[and help to</span>
@@ -122,7 +129,7 @@
       </section>
       <!-- ABOUT PAGE END -->
       <!-- PERSONAL PROJECTS -->
-      <section class="my-projects">
+      <section class="my-projects" id="projects">
         <h2 class="section-title">My personal _projects</h2>
         <div class="project-item">
           <div class="project-slider">
@@ -250,7 +257,7 @@
       </section>
       <!-- TEAM PROJECTS END -->
       <!-- CALLBACK FORM -->
-      <section class="callback">
+      <section class="callback" id="callback">
         <div class="form-container">
           <form action="" class="callback-form">
             <h3 class="form-title">/Are you minding [a project?]</h3>
@@ -279,7 +286,7 @@
       </section>
       <!-- CALLBACK FORM END-->
       <!-- CALCULATOR -->
-      <section class="calculator">
+      <section class="calculator" id="calculator">
         <div class="calculator-info">
           <h2 class="calculator-title">
             Calculate_ the cost of a future project
@@ -399,7 +406,7 @@
       </section>
       <!-- CALCULATOR END -->
       <!-- FOOTER -->
-      <footer class="footer">
+      <footer class="footer" id="contacts">
         <div class="footer-container">
           <span class="my-name">Alex Lomov</span>
           <span class="my-specialization">Frontend Developer</span>
@@ -429,6 +436,51 @@
         </div>
       </footer>
       <!-- FOOTER END -->
+      <!-- MODALS -->
+      <div class="modals-wrapper">
+        <!-- MOBILE MENU -->
+        <div class="modal modal-mobile-menu">
+          <div class="modal-mobile-menu-content">
+            <div class="modal-container mobile-menu-container">
+              <nav class="mobile-menu-items">
+                <a href="#about" class="mobile-menu-item">ABOUT</a>
+                <a href="#projects" class="mobile-menu-item">PROJECTS</a>
+                <a href="#calculator" class="mobile-menu-item"
+                  >COST CALCULATOR</a
+                >
+                <a href="#contacts" class="mobile-menu-item">CONTACTS</a>
+              </nav>
+              <div class="mobile-menu-contacts">
+                <a class="my-telephone" href="tel:+380684380630"
+                  >+38 (068) 438-06-30</a
+                >
+                <a class="my-email" href="mailto:oleksii.lomov@nure.ua"
+                  >oleksii.lomov@nure.ua</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal-my-video">
+          <div class="my-video-container">
+            <i class="icon-cross"></i>
+            <video class="my-video-content" src="video.mp4" controls></video>
+          </div>
+        </div>
+        <div class="modal modal-request-received">
+          <div class="request-received-container">
+            <i class="icon-cross-request-received"></i>
+            <h3 class="request-received-title">{Thanks}</h3>
+            <p class="request-received-primary-msg">
+              I've received your request/
+            </p>
+            <p class="request-received-secondary-msg">
+              I will contact you soon =)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- MODALS END -->
     </div>
     <script src="/js/choices.min.js"></script>
     <script src="/js/calculator.js"></script>
