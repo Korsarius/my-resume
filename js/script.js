@@ -13,13 +13,6 @@ const modalVideo = document.querySelector(".modal-my-video");
 const videoBtn = document.querySelector(".about-me-btn");
 const closeVideoBtn = document.querySelector(".icon-cross");
 
-/* Модальное окно для связаться со мной */
-const modalRequestReceived = document.querySelector(".modal-request-received");
-const callbackToMeBtn = document.querySelector(".callback-form-submit");
-const closeModalRequestReceivedBtn = document.querySelector(
-  ".icon-cross-request-received"
-);
-
 // Клик по кнопке для скрытия показа меню и изменения иконки
 sidebarToggleBtn.onclick = function (event) {
   menuTop.classList.toggle("menu-top-click");
@@ -55,15 +48,4 @@ closeVideoBtn.onclick = function () {
     video.pause();
   }
   modalVideo.classList.remove("modal-my-video--active");
-};
-
-//Клик по кнопке Discuss the project, для обратной связи со мной
-callbackToMeBtn.onclick = function (event) {
-  event.preventDefault();
-  modalRequestReceived.classList.toggle("modal-request-received--active");
-};
-
-// Клик по крестику в модальном окне для обратной связи, чтобы его закрыть
-closeModalRequestReceivedBtn.onclick = function (event) {
-  modalRequestReceived.classList.remove("modal-request-received--active");
 };

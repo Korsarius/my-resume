@@ -754,6 +754,10 @@ img {
   align-items: center;
 }
 
+.callback-form-input-error {
+  border: 1px solid red !important;
+}
+
 .form-title {
   width: 260px;
   margin: 0 0 20px 0;
