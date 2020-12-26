@@ -34,21 +34,33 @@
           </div>
         </nav>
         <h1 class="front-page-my-name">[Alex Lomov]</h1>
-        <h2 class="section-title">{FRONTEND} _DEVELOPER</h2>
+        <h2 class="section-title">
+          <span class="front-page-profession-part-1">{FRONTEND}</span>
+          <span class="front-page-profession-part-2"> _DEVELOPER</span>
+        </h2>
         <p class="front-page-description">
           / Using HTML, CSS, JavaScript, React Native and Node.js I help to
           build websites, small and medium web apps for business
         </p>
         <button class="my-works-btn">See my recent works —</button>
-        <img class="my-photo" src="img/my-photo.jpg" alt="photo" />
-        <h3 class="about-me">about me in 2 minutes</h3>
-        <button class="about-me-btn">
-          <img
-            class="about-me-btn--icon"
-            src="img/About me/Polygon 1.svg"
-            alt="play-icon"
-          />Play
-        </button>
+        <div class="front-page-my-info">
+          <img class="my-photo" src="img/my-photo.jpg" alt="photo" />
+          <div class="front-page-my-resume">
+            <h3 class="about-me mobile-element">about me in 2 minutes</h3>
+            <h3 class="about-me tablet-element">
+              about me<br />
+              in 2 minutes
+            </h3>
+            <h3 class="about-me desktop-element">about me in 2 minutes</h3>
+            <button class="about-me-btn">
+              <img
+                class="about-me-btn--icon"
+                src="img/About me/Polygon 1.svg"
+                alt="play-icon"
+              />Play
+            </button>
+          </div>
+        </div>
         <img class="laptop-img" src="img/laptop.svg" alt="laptop" />
         <h3 class="about-me my-skills">My Coding Skills & Experience</h3>
         <ul class="my-skills-list">
@@ -325,13 +337,24 @@
       <section class="calculator" id="calculator">
         <div class="calculator-info">
           <h2 class="calculator-title">
-            Calculate_ the cost of a future project
+            Calculate_ <br class="line-break" />the cost of a future project
           </h2>
           <p class="calculator-descr">
             <span>This is an</span>
             <span class="calculator-descr-accent">approximate</span>
             <span>calculation.</span>
           </p>
+          <div class="tablet-width">
+            <img
+              class="calculator-img tablet-width-img"
+              src="/img/calculator.svg"
+              alt="calculator"
+            />
+            <p class="tablet-width-p">
+              / The final cost depends on the technical requirements, terms,
+              specifics of your project.
+            </p>
+          </div>
           <img
             class="calculator-img"
             src="/img/calculator.svg"
@@ -444,6 +467,20 @@
       <!-- FOOTER -->
       <footer class="footer" id="contacts">
         <div class="footer-container">
+          <div class="tablet-width">
+            <div class="tablet-width-item">
+              <span class="my-name">Alex Lomov</span>
+              <span class="my-specialization">Frontend Developer</span>
+            </div>
+            <div class="tablet-width-item">
+              <a class="my-telephone" href="tel:+380684380630"
+                >+38 (068) 438-06-30</a
+              >
+              <a class="my-email" href="mailto:oleksii.lomov@nure.ua"
+                >oleksii.lomov@nure.ua</a
+              >
+            </div>
+          </div>
           <span class="my-name">Alex Lomov</span>
           <span class="my-specialization">Frontend Developer</span>
           <a class="my-telephone" href="tel:+380684380630"
