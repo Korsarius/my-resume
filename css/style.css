@@ -29,7 +29,7 @@
   --mobile: calc(300px + var(--vertical-scroll));
   --tablet: calc(640px + var(--vertical-scroll));
   --desktop: calc(900px + var(--vertical-scroll));
-  --desktop-lg: calc(1146px + var(--vertical-scroll));
+  --desktop-lg: calc(1270px + var(--vertical-scroll));
 
   /* animation */
   --animation-fast: 0.1s;
@@ -211,7 +211,7 @@ img {
 }
 
 .my-video-container {
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,7 +226,7 @@ img {
 /* REQUEST RECEIVED MODAL */
 
 .modal-request-received {
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,7 +242,7 @@ img {
 }
 
 .request-received-container {
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,7 +283,7 @@ img {
 /* PROJECT MODAL */
 
 .project-modal {
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,6 +348,13 @@ img {
 
 /* FRONT PAGE */
 
+.front-page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .front-page {
   display: flex;
   flex-direction: column;
@@ -365,6 +372,12 @@ img {
   text-transform: uppercase;
   color: var(--txt-c-accent);
   text-align: center;
+}
+
+.my-page-main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-title {
@@ -472,6 +485,9 @@ img {
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease-in;
+  text-align: center;
+  padding-top: 22px;
+  text-decoration: none;
 }
 
 .my-works-btn:hover {
@@ -717,6 +733,7 @@ img {
 .show-more--btn {
   width: 185px;
   height: 45px;
+  padding-top: 0;
   outline: none;
 }
 
@@ -1073,6 +1090,7 @@ img {
   }
 }
 
+/* TABLET VERSION */
 @media only screen and (min-width: 640px) {
   .wrapper {
     min-height: 640px;
@@ -1162,6 +1180,7 @@ img {
     height: 390px;
   }
   .about-me--text {
+    align-self: flex-start;
     width: 55%;
     margin: 30px 0 150px 0;
   }
@@ -1335,21 +1354,101 @@ img {
     display: block;
     margin-right: 35px;
   }
-  /* MODAL WINDOWS */
-  .project-modal,
-  .project-modal--active {
-    width: 100%;
-  }
   .project-modal-container {
     height: 95%;
   }
-  .modal-request-received,
-  .modal-request-received--active,
-  .project-modal-container {
-    width: 100%;
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 1000px) {
+  .tablet-element {
+    display: none;
   }
-  .modal-my-video,
-  .modal-my-video--active {
-    width: 100%;
+  .mobile-element {
+    display: none;
+  }
+  .desktop-element {
+    display: block;
+  }
+  .front-page {
+    padding-bottom: 160px;
+  }
+  .front-page .section-title {
+    width: 510px;
+    font-size: 70px;
+    line-height: 84px;
+    margin: 15px 0 35px -60px;
+  }
+  .experience-wrapper {
+    order: 1;
+  }
+  .my-page-main-info {
+    position: relative;
+    align-items: flex-start;
+    order: 2;
+    z-index: 2;
+  }
+  .my-photo {
+    position: absolute;
+    width: 256px;
+    height: 295px;
+    z-index: -1;
+    right: 10px;
+    bottom: 240px;
+    margin: 0;
+  }
+  .front-page-my-info {
+    order: 3;
+  }
+  .front-page-description {
+    text-align: left;
+    margin-bottom: 65px;
+  }
+  .front-page-profession-part-2 {
+    margin-left: 57px;
+  }
+  .front-page-wrapper {
+    max-width: var(--desktop-lg);
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 115px;
+  }
+  .laptop-img {
+    width: 370px;
+    position: absolute;
+    right: 0;
+    bottom: -125px;
+    z-index: 1;
+  }
+  .front-page-my-name {
+    margin-top: 0;
+  }
+  .front-page-my-resume .about-me {
+    text-align: right;
+    margin-top: 0;
+  }
+  .about-me my-skills {
+    margin: 0;
+    text-align: left;
+  }
+  .my-skills-list {
+    padding-left: 0;
+  }
+  .my-project-items-wrapper,
+  .my-team-projects-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project-item {
+    max-width: 50%;
+    margin: 0;
+  }
+  .project-item:nth-child(odd) {
+    padding-right: 20px;
+  }
+  .project-item:nth-child(even) {
+    padding-left: 20px;
   }
 }
