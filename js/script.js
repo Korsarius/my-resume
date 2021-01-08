@@ -49,3 +49,13 @@ closeVideoBtn.onclick = function () {
   }
   modalVideo.classList.remove("modal-my-video--active");
 };
+
+// Отображение стрелки для поднятия в начало сайта при скроле
+const upArrow = document.querySelector(".up-arrow");
+
+window.addEventListener("scroll", (event) => {
+  upArrow.style = "display: block";
+  if (window.pageYOffset === 0) {
+    upArrow.style = "display: none";
+  }
+});

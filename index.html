@@ -19,10 +19,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="up-arrow">
+      <a href="#front-page"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
     <div class="wrapper">
       <!-- FRONT PAGE -->
       <section class="front-page" id="front-page">
-        <nav class="navigation">
+        <nav class="navigation mobile-tablet">
           <a href="#front-page" class="logo-link"
             ><img src="img/goit-logo.svg" alt="logo"
           /></a>
@@ -32,6 +35,18 @@
             <span class="menu-global menu-middle"></span>
             <span class="menu-global menu-bottom"></span>
           </div>
+        </nav>
+        <nav class="navigation-desktop">
+          <a href="#front-page" class="logo-link"
+            ><img src="img/goit-logo.svg" alt="logo"
+          /></a>
+          <ul class="menu-desktop">
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#calculator">cost calculator</a></li>
+            <li><a href="#contacts">contacts</a></li>
+          </ul>
+          <a href="#callback" class="hire-me-btn">— HIRE ME</a>
         </nav>
         <div class="front-page-wrapper">
           <div class="my-page-main-info">
@@ -52,11 +67,7 @@
             <a href="#projects" class="my-works-btn">See my recent works —</a>
           </div>
           <div class="front-page-my-info">
-            <img
-              class="my-photo tablet-element"
-              src="img/my-photo.jpg"
-              alt="photo"
-            />
+            <img class="my-photo" src="img/my-photo.jpg" alt="photo" />
             <div class="front-page-my-resume">
               <h3 class="about-me mobile-element">about me in 2 minutes</h3>
               <h3 class="about-me tablet-element desktop-element">
@@ -134,7 +145,7 @@
       <!-- ABOUT PAGE -->
       <section class="about-page" id="about">
         <div class="about-page-wrapper">
-          <h2 class="section-title page-title">I code things from scratch_</h2>
+          <h2 class="section-title page-title">I code <br class="mobile-element" /> things from scratch_</h2>
           <p class="about-me--title">
             <span>[and help to</span>
             <span>create great web</span>
@@ -169,7 +180,9 @@
       <!-- ABOUT PAGE END -->
       <!-- PERSONAL PROJECTS -->
       <section class="my-projects" id="projects">
-        <h2 class="section-title">My personal _projects</h2>
+        <div class="title-wrapper">
+          <h2 class="section-title">My personal _projects</h2>
+        </div>
         <div class="my-project-items-wrapper">
           <div class="project-item">
             <div class="project-slider">
@@ -278,7 +291,9 @@
       <!-- TEAM PROJECTS -->
       <section class="my-team-projects">
         <span class="substrate">team</span>
-        <h2 class="section-title">Teamwork _projects</h2>
+        <div class="title-wrapper">
+          <h2 class="section-title">Teamwork _projects</h2>
+        </div>
         <div class="my-team-projects-items-wrapper">
           <div class="project-item">
             <div class="project-slider">
