@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/socialNetworksIcons.css" />
     <link rel="stylesheet" href="css/cross-icon.css" />
     <link rel="stylesheet" href="css/choices.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -38,7 +39,7 @@
         </nav>
         <nav class="navigation-desktop">
           <a href="#front-page" class="logo-link"
-            ><img src="img/goit-logo.svg" alt="logo"
+            ><img class="logo--img" src="img/goit-logo.svg" alt="logo"
           /></a>
           <ul class="menu-desktop">
             <li><a href="#about">about</a></li>
@@ -54,6 +55,8 @@
               class="my-photo desktop-element"
               src="img/my-photo.jpg"
               alt="photo"
+              data-aos="fade-down"
+              data-aos-delay="1500"
             />
             <h1 class="front-page-my-name">[Alex Lomov]</h1>
             <h2 class="section-title">
@@ -64,11 +67,17 @@
               / Using HTML, CSS, JavaScript, React Native and Node.js I help to
               build websites, small and medium web apps for business
             </p>
-            <a href="#projects" class="my-works-btn">See my recent works —</a>
+            <a href="#projects" class="my-works-btn main--btn"
+              >See my recent works —</a
+            >
           </div>
           <div class="front-page-my-info">
             <img class="my-photo" src="img/my-photo.jpg" alt="photo" />
-            <div class="front-page-my-resume">
+            <div
+              class="front-page-my-resume"
+              data-aos="fade-left"
+              data-aos-delay="1000"
+            >
               <h3 class="about-me mobile-element">about me in 2 minutes</h3>
               <h3 class="about-me tablet-element desktop-element">
                 about me<br />
@@ -84,7 +93,11 @@
             </div>
           </div>
           <img class="laptop-img" src="img/laptop.svg" alt="laptop" />
-          <div class="experience-wrapper">
+          <div
+            class="experience-wrapper"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <div class="experience-container">
               <h3 class="about-me my-skills">My Coding Skills & Experience</h3>
               <ul class="my-skills-list">
@@ -145,8 +158,19 @@
       <!-- ABOUT PAGE -->
       <section class="about-page" id="about">
         <div class="about-page-wrapper">
-          <h2 class="section-title page-title">I code <br class="mobile-element" /> things from scratch_</h2>
-          <p class="about-me--title">
+          <h2
+            class="section-title page-title"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            I code <br class="mobile-element" />
+            things from scratch_
+          </h2>
+          <p
+            class="about-me--title"
+            data-aos="fade-right"
+            data-aos-delay="1000"
+          >
             <span>[and help to</span>
             <span>create great web</span>
             <span>apps]</span>
@@ -156,20 +180,22 @@
             <img
               src="/img/web-illustration.png"
               alt="web-illustration-laptop"
+              data-aos="fade-up"
+            data-aos-duration="3000"
             />
             <div class="about-me--text">
-              <p>
+              <p data-aos="fade-right" data-aos-delay="1100">
                 / I will help you to create a high-performance Landing Page,
                 functional corporate website for your business, interactive web
                 app for SaaS, startup, or other services.
               </p>
-              <p>
+              <p data-aos="fade-right" data-aos-delay="1200">
                 / My specialization is front-end development — client side of
                 the web. But I also have full-stack developer experience.
               </p>
             </div>
           </div>
-          <div class="about-projects desktop-element">
+          <div class="about-projects desktop-element" data-aos="fade-down" data-aos-delay="1000">
             <div class="about-projects-bar">
               <p class="about-projects-count">10+</p>
             </div>
@@ -181,10 +207,17 @@
       <!-- PERSONAL PROJECTS -->
       <section class="my-projects" id="projects">
         <div class="title-wrapper">
-          <h2 class="section-title">My personal _projects</h2>
+          <h2
+            class="section-title"
+            data-aos="fade-right"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            My personal _projects
+          </h2>
         </div>
         <div class="my-project-items-wrapper">
-          <div class="project-item">
+          <div class="project-item" data-aos="zoom-in-up"
+          data-aos-anchor-placement="center-bottom">
             <div class="project-slider">
               <div class="dots">
                 <i class="fas fa-circle project-dot"></i>
@@ -210,7 +243,8 @@
             </div>
             <span class="item-end"></span>
           </div>
-          <div class="project-item">
+          <div class="project-item" data-aos="zoom-in-up"
+          data-aos-anchor-placement="center-bottom">
             <div class="project-slider">
               <div class="dots">
                 <i class="fas fa-circle project-dot"></i>
@@ -236,7 +270,8 @@
             </div>
             <span class="item-end"></span>
           </div>
-          <div class="project-item">
+          <div class="project-item" data-aos="zoom-in-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="200">
             <div class="project-slider">
               <div class="dots">
                 <i class="fas fa-circle project-dot"></i>
@@ -262,7 +297,8 @@
             </div>
             <span class="item-end"></span>
           </div>
-          <div class="project-item">
+          <div class="project-item" data-aos="zoom-in-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="200">
             <div class="project-slider">
               <div class="dots">
                 <i class="fas fa-circle project-dot"></i>
@@ -290,12 +326,16 @@
       <!-- PERSONAL PROJECTS END -->
       <!-- TEAM PROJECTS -->
       <section class="my-team-projects">
-        <span class="substrate">team</span>
+        <span class="substrate" data-aos="fade-left"
+        data-aos-easing="linear"
+        data-aos-duration="1500">team</span>
         <div class="title-wrapper">
-          <h2 class="section-title">Teamwork _projects</h2>
+          <h2 class="section-title" data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-duration="500">Teamwork _projects</h2>
         </div>
         <div class="my-team-projects-items-wrapper">
-          <div class="project-item">
+          <div class="project-item" data-aos="flip-left" data-aos-delay="300">
             <div class="project-slider">
               <div class="dots">
                 <i class="fas fa-circle project-dot"></i>
@@ -318,7 +358,7 @@
             </div>
             <span class="item-end"></span>
           </div>
-          <div class="project-item">
+          <div class="project-item" data-aos="flip-right" data-aos-delay="300">
             <div class="project-slider">
               <div class="dots">
                 <i class="fas fa-circle project-dot"></i>
@@ -345,7 +385,9 @@
       </section>
       <!-- TEAM PROJECTS END -->
       <!-- CALLBACK FORM -->
-      <section class="callback" id="callback">
+      <section class="callback" id="callback" data-aos="fade-up"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine">
         <div class="form-container">
           <form action="" class="callback-form">
             <h3 class="form-title">/Are you minding [a project?]</h3>
@@ -385,10 +427,10 @@
       <section class="calculator" id="calculator">
         <div class="calculator-wrapper">
           <div class="calculator-info">
-            <h2 class="calculator-title">
+            <h2 class="calculator-title" data-aos="fade-right">
               Calculate_ <br class="line-break" />the cost of a future project
             </h2>
-            <p class="calculator-descr">
+            <p class="calculator-descr" data-aos="fade-right" data-aos-delay="500">
               <span>This is an</span>
               <span class="calculator-descr-accent">approximate</span>
               <span>calculation.</span>
@@ -398,8 +440,9 @@
                 class="calculator-img tablet-width-img"
                 src="/img/calculator.svg"
                 alt="calculator"
+                data-aos="fade-up" data-aos-delay="1000"
               />
-              <p class="tablet-width-p">
+              <p class="tablet-width-p" data-aos="fade-right" data-aos-delay="700">
                 / The final cost depends on the technical requirements, terms,
                 specifics of your project.
               </p>
@@ -414,7 +457,7 @@
               specifics of your project.
             </p>
           </div>
-          <form action="" class="calculator-form">
+          <form action="" class="calculator-form" data-aos="fade-left" data-aos-delay="3000">
             <div class="calculator-form-input">
               <label
                 for="calculator-form-website-type"
@@ -798,6 +841,8 @@
     <script src="/js/choices.min.js"></script>
     <script src="/js/calculator.js"></script>
     <script src="/js/modals.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/animation-on-scroll.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

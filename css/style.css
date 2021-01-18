@@ -149,7 +149,6 @@ img {
   width: 100%;
   pointer-events: none;
   opacity: 0;
-  /* transform: translateX(-150%); */
   transition: opacity 1s ease-in-out;
   background-color: var(--c-light);
 }
@@ -158,7 +157,6 @@ img {
   opacity: 1;
   pointer-events: all;
   z-index: 9;
-  /* transform: translateX(-0%); */
 }
 
 .modal-mobile-menu-content {
@@ -199,10 +197,12 @@ img {
   text-decoration: none;
   text-align: center;
   margin-bottom: 35px;
+  transition: font-size 0.3s ease-in-out;
 }
 
 .mobile-menu-item:hover {
-  text-decoration: underline;
+  font-size: 24px;
+  color: var(--txt-c-accent);
 }
 
 .mobile-menu-items a:last-child {
@@ -377,7 +377,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 320px; */
   background-color: var(--c-dark);
   padding: 30px 10px 55px;
 }
@@ -433,6 +432,14 @@ img {
   flex-grow: 1;
 }
 
+.logo--img{
+  transition: all 0.3s ease-in-out;
+}
+
+.logo--img:hover{
+  transform: scale(1.1);
+}
+
 .hire-me-btn {
   font-weight: 800;
   font-size: 15px;
@@ -442,6 +449,11 @@ img {
   text-transform: uppercase;
   color: var(--txt-c-accent);
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me-btn:hover{
+  color: var(--txt-c-light);
 }
 
 .menu {
@@ -502,14 +514,21 @@ img {
   color: var(--txt-c-light);
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
   text-align: center;
   padding-top: 22px;
   text-decoration: none;
 }
 
 .my-works-btn:hover {
-  background-color: #f89654;
+  border: 1px solid var(--c-accent);
+  background-color: transparent;
+  color: var(--txt-c-accent);
+}
+
+.main--btn:hover{
+  border: none;
+  outline: 1px solid var(--c-accent);
 }
 
 .front-page-my-info,
@@ -539,25 +558,21 @@ img {
 .about-me-btn {
   width: 140px;
   height: 40px;
-
   align-self: center;
-
   background-color: transparent;
   border: 2px solid var(--c-accent);
-
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-  /* text-align: right; */
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--txt-c-accent);
   cursor: pointer;
-  transition: transform 0.2s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-me-btn:hover {
-  transform: scale(1.1);
+    background-color: var(--c-light);
 }
 
 .about-me-btn--icon {
@@ -573,7 +588,8 @@ img {
 .my-skills {
   margin: 0 42px;
   width: 185px;
-  align-self: center;
+  margin-left: 0;
+  text-align: left;
 }
 
 .my-skills-list {
@@ -630,7 +646,7 @@ img {
   color: var(--txt-c-dark);
 }
 
-.about-page-wrapper h2{
+.about-page-wrapper h2 {
   max-width: 300px;
 }
 
@@ -701,7 +717,7 @@ img {
   margin: 0 auto;
 }
 
-.my-projects{
+.my-projects {
   padding: 50px 20px;
 }
 
@@ -888,11 +904,13 @@ img {
   color: var(--txt-c-light);
   border: none;
   cursor: pointer;
-  transition: background-color 0.2s ease-in;
+  transition: all 0.3s ease-in-out;
 }
 
 .callback-form-submit:hover {
-  background-color: #f89654;
+  outline: 1px solid var(--c-accent);
+  background-color: transparent;
+  color: var(--txt-c-accent);
 }
 
 /* CALLBACK FORM END */
@@ -1231,7 +1249,7 @@ img {
     width: 360px;
     height: 390px;
   }
-  .about-page-wrapper h2{
+  .about-page-wrapper h2 {
     max-width: 100%;
   }
   .about-me--text {
@@ -1476,6 +1494,7 @@ img {
     color: var(--txt-c-grey);
   }
   .menu-desktop li a:hover {
+    color: var(--txt-c-accent);
     text-decoration: underline;
   }
   .menu-desktop li {
@@ -1595,7 +1614,7 @@ img {
     margin: 0 auto;
     position: relative;
   }
-  .about-page-wrapper h2{
+  .about-page-wrapper h2 {
     max-width: 730px;
   }
   .about-me--title {
@@ -1769,7 +1788,7 @@ img {
     max-width: 42%;
     justify-content: flex-end;
   }
-  .modal-my-video--active{
+  .modal-my-video--active {
     width: 100%;
     z-index: 100;
   }
@@ -1787,8 +1806,8 @@ img {
   }
 }
 
-@media only screen and (min-width: 1520px){
-  .substrate{
+@media only screen and (min-width: 1520px) {
+  .substrate {
     left: 30%;
   }
 }
