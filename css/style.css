@@ -433,6 +433,8 @@ img {
 }
 
 .logo--img{
+  height: 40px;
+  margin: 2px 0;
   transition: all 0.3s ease-in-out;
 }
 
